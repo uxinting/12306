@@ -1,3 +1,4 @@
+#! _*_ coding: utf8 _*_
 # 关于软件使用配置说明，一定要看！！！
 # ps: 如果是候补车票，需要通过人证一致性核验的用户及激活的“铁路畅行”会员可以提交候补需求，请您按照操作说明在铁路12306app.上完成人证核验
 # 关于候补了之后是否还能继续捡漏的问题在此说明： 软件为全自动候补加捡漏，如果软件候补成功则会停止抢票，发出邮件通知，但是不会影响你继续捡漏，
@@ -9,18 +10,18 @@ TICKET_TYPE = 2
 
 # 出发日期(list) "2018-01-06", "2018-01-07"
 STATION_DATES = [
-    "2019-09-20"
+    "2019-12-17"
 ]
 
 # 填入需要购买的车次(list)，"G1353"
 STATION_TRAINS = [
-    "",
+    "Z77",
 ]
 # 出发城市，比如深圳北，就填深圳就搜得到
-FROM_STATION = ""
+FROM_STATION = "武汉"
 
 # 到达城市 比如深圳北，就填深圳就搜得到
-TO_STATION = ""
+TO_STATION = "长沙"
 
 # 座位(list) 多个座位ex:
 # "商务座",
@@ -33,7 +34,7 @@ TO_STATION = ""
 # "无座",
 # "动卧",
 SET_TYPE = [
-    "",
+    "硬卧",
 ]
 
 # 当余票小于乘车人，如果选择优先提交，则删减联系人和余票数一致在提交
@@ -44,12 +45,12 @@ IS_MORE_TICKET = True
 # - "张三"
 # - "李四"
 TICKET_PEOPLES = [
-    "",
+    "吴新庭",
 ]
 
 # 12306登录账号
-USER = ""
-PWD = ""
+USER = "13297931810"
+PWD = "xinting90"
 
 # 加入小黑屋时间默认为5分钟，此功能为了防止僵尸票导致一直下单不成功错过正常的票
 TICKET_BLACK_LIST_TIME = 5
@@ -72,11 +73,11 @@ IS_AUTO_CODE = True
 #  host: "smtp.qq.com"
 EMAIL_CONF = {
     "IS_MAIL": True,
-    "email": "",
-    "notice_email_list": "",
-    "username": "",
-    "password": "",
-    "host": "",
+    "email": "wuxintingz@163.com",
+    "notice_email_list": "wu.xinting@hotmail.com",
+    "username": "wuxintingz@163.com",
+    "password": "gnitnix..90",
+    "host": "smtp.163.com",
 }
 
 # 是否开启 server酱 微信提醒， 使用前需要前往 http://sc.ftqq.com/3.version 扫码绑定获取 SECRET 并关注获得抢票结果通知的公众号
@@ -112,7 +113,7 @@ OPEN_TIME = "13:00:00"
 COOKIE_TYPE = 1
 # 如果COOKIE_TYPE=2，则需配置chromeDriver路径,下载地址http://chromedriver.storage.googleapis.com/index.html
 # chromedriver配置版本只要和chrome的大版本匹配就行
-CHROME_PATH = "/Users/wenxianping/Downloads/chromedriver"
+CHROME_PATH = "/Users/sanjing/Downloads/chromedriver"
 
 PASSENGER_TICKER_STR = {
     '一等座': 'M',
